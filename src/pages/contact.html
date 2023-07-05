@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="flex justify-between items-center h-24 bg-green-600">
+      <div class="flex justify-between w-full mx-24">
+        <h1 class="title-brand text-3xl text-zinc-50">Goncang samudera</h1>
+        <div class="cart-order flex items-center">
+          <button class="relative">
+            <img
+              src="../assets/svg/cart.svg"
+              alt=""
+              class="w-12 object-cover"
+            />
+            <div class="jumlah-keranjang"></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+    <nav
+      class="flex bg-green-500 items-center text-zinc-50 justify-between px-9 h-14 sticky top-0 z-50"
+    >
+      <ul class="navbar-list flex w-screen justify-evenly items-center">
+        <li class="hover:text-zinc-500">
+          <a
+            class="text-base bg-white py-1 rounded-lg text-black"
+            href="./landing.html"
+            >Home</a
+          >
+        </li>
+        <li class="hover:text-zinc-500">
+          <a class="store-link text-base" href="../index.html">Store</a>
+        </li>
+        <li class="hover:text-zinc-500">
+          <a class="text-base" href="./about.html">About</a>
+        </li>
+        <li class="hover:text-zinc-500">
+          <a
+            class="text-base bg-orange-700 py-1 px-5 rounded-lg text-green-600"
+            href=""
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+      </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="../script/cart.js"></script>
+    <script src="../script/search.js"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

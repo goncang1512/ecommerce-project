@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  height: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+  .container-card {
+    margin: 0;
+  }
+
+  /* header 640*/
+  .title-judul {
+    display: none;
+    width: auto;
+  }
+
+  .title-brand {
+    font-size: 20px;
+  }
+
+  .input-search {
+    width: 900px;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+}
+
+/* Navbar */
+.navbar-list li a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-img {
+  height: 18rem;
+  padding-top: 10px;
+}
+.card-body {
+  padding: 10px;
+  height: 120px;
+}
+
+.card-actions {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Classlist js */
+.card-text.expanded {
+  text-overflow: initial;
+  white-space: initial;
+  overflow: initial;
+}
+
+.ixpanded {
+  height: auto;
+}
+
+/* input */
+#search {
+  padding: 0 13px;
+}
+
+/* Header */
+.amount-order {
+  width: 16px;
+  height: 16px;
+  top: 0;
+  right: -6.5px;
+  font-size: 12px;
+}
+
+.title-judul {
+  font-family: "Great Vibes", cursive;
+}
+
+.title-brand {
+  font-family: "Great Vibes", cursive;
+}
+
+/* menu toggle */
+.menu-toggle {
+  margin-right: 20px;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 100%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+  background-color: red;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+  background-color: red;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+  background-color: red;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+
+    width: 100vw;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .navbar-utama {
+    display: flex;
+    justify-content: end;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-list {
+    position: fixed;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 75%;
+    justify-content: space-evenly;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+    background-color: #fff;
+    overflow: scroll;
+    color: black;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .navbar-list.slide {
+    transform: translateX(0);
+  }
+}
