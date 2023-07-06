@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/svg/shopping-bag.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="flex justify-between items-center h-24 bg-green-600">
+      <button id="kembaliButton" class="flex justify-center">
+        <span class="material-symbols-outlined text-3xl mx-14 text-white">
+          arrow_back
+        </span>
+      </button>
+      <div class="flex justify-between w-full">
+        <h1 class="title-brand text-3xl text-zinc-50">Keranjang Pesanan</h1>
+      </div>
+    </nav>
+
+    <!-- Cart pesanan -->
+    <section>
+      <div class="bg-green-500">
+        <ul class="cart-tabel text-white py-2 w-full flex justify-evenly">
+          <li><img src="../../public/back-arrow.svg" alt="" /></li>
+          <li>No</li>
+          <li>Foto</li>
+          <li>Judul</li>
+          <li>Jumlah</li>
+          <li>Harga</li>
+        </ul>
+      </div>
+      <div class="bg-green-600">
+        <div class="bg-red-500 flex justify-evenly">
+          <p>1</p>
+          <img src="../assets/svg/cart.svg" alt="" />
+          <p>title</p>
+          <p>jumlah</p>
+          <p>harga</p>
+        </div>
+      </div>
+      <table>
+        <tr class="flex w-screen justify-evenly bg-red-500">
+          <td>Kolom 1</td>
+          <td>Kolom 2</td>
+          <td class="flex flex-wrap border border-green-500">
+            <p class="flex flex-wrap">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+              nemo, accusantium excepturi ratione iure nam animi debitis,
+              expedita deleniti dolorem ipsam illum rerum est quia eaque
+              molestiae optio magnam labore?
+            </p>
+          </td>
+          <td>Kolom 4</td>
+          <td>Kolom 5</td>
+        </tr>
+      </table>
+    </section>
+    <script src="../script/keranjang.js"></script>
+  </body>
+</html>

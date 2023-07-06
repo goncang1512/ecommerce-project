@@ -191,6 +191,8 @@ body {
   transform: rotate(180deg);
 }
 
+/* Cart */
+
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: flex;

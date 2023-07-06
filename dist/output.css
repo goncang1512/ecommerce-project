@@ -1346,6 +1346,15 @@ html {
   margin: 6rem;
 }
 
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem; /* 56px */
+  margin-right: 3.5rem; /* 56px */
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -1449,6 +1458,10 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-end {
