@@ -1,0 +1,16 @@
+.keranjang-pesanan {
+  padding: 20px 144px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .keranjang-pesanan {
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .keranjang-self {
+    gap: 10px;
+    padding: 0 6px;
+  }
+}

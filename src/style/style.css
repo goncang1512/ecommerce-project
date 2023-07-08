@@ -192,6 +192,12 @@ body {
 }
 
 /* Cart */
+.cart-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+}
 
 @media screen and (max-width: 768px) {
   .menu-toggle {
