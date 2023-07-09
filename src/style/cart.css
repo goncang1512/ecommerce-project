@@ -1,6 +1,39 @@
 .keranjang-pesanan {
-  padding: 20px 144px;
+  padding: 20px 90px;
   gap: 20px;
+}
+
+.keranjang-self {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.delete-cart {
+  border-bottom: 1px solid rgb(34 197 94);
+  display: none;
+}
+
+.button-hapus {
+  width: 100%;
+  text-align: end;
+  display: none;
+}
+
+.button-hapus-deks {
+  width: 100%;
+  text-align: end;
+}
+
+.delete-deks {
+  border-bottom: 1px solid rgb(34 197 94);
+  display: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.delete-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -12,5 +45,21 @@
   .keranjang-self {
     gap: 10px;
     padding: 0 6px;
+  }
+
+  .chekbox-container {
+    display: none;
+  }
+
+  .delete-cart {
+    display: flex;
+  }
+
+  .input-check {
+    display: block;
+  }
+
+  .keranjang-self {
+    border-radius: 0;
   }
 }
