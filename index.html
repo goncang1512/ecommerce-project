@@ -13,16 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="../src/style/style.css" />
     <title>Store</title>
   </head>
   <body class="bg-green-600 h-full bottom-0">
     <!-- Navbar searche -->
-    <nav class="flex justify-between items-center h-24 bg-green-600">
+    <nav class="flex justify-between items-center gap-5 h-24 bg-green-600">
       <div class="brand-container flex justify-between mx-12 w-2/4">
-        <h1
-          class="title-judul flex items-center text-3xl text-zinc-50 md:hidden"
-        >
+        <h1 class="title-judul flex items-center text-3xl text-zinc-50">
           Goncang samudera
         </h1>
         <div class="cart-order flex items-center">
@@ -31,7 +29,7 @@
               <img
                 src="./src/assets/svg/cart.svg"
                 alt=""
-                class="w-12 object-cover"
+                class="w-14 object-cover"
               />
               <div class="jumlah-keranjang"></div></button
           ></a>
@@ -39,10 +37,10 @@
       </div>
       <!-- input search -->
       <div
-        class="input-search border flex justify-center w-2/4 bg-zinc-50 rounded-lg overflow-hidden mx-12 items-center pr-5"
+        class="input-search border flex justify-center w-2/4 rounded-lg overflow-hidden mx-12 items-center pr-5 bg-white relative"
       >
         <input
-          class="h-11 px-5 text-lg w-full outline-none bg-transparent text-black"
+          class="h-11 px-5 text-lg w-full outline-none text-black bg-white"
           type="text"
           placeholder="Search"
           id="searchInput"
@@ -53,7 +51,7 @@
             class="flex items-center justify-center"
             id="search"
           >
-            <button class="bg-transparent" id="searchButton">
+            <button class="absolute right-0 pr-5" id="searchButton">
               <span class="material-symbols-outlined"> search </span>
             </button>
           </label>
@@ -65,17 +63,13 @@
     <nav
       class="flex bg-green-500 items-center text-zinc-50 justify-between px-9 h-14 sticky top-0 z-50"
     >
-      <ul class="navbar-list flex w-screen justify-evenly">
+      <ul class="navbar-menu flex w-screen justify-evenly">
         <li class="hover:text-zinc-500">
-          <a
-            class="text-base bg-white py-1 rounded-lg text-black"
-            href="src/pages/landing.html"
-            >Home</a
-          >
+          <a class="cursor-pointer p-2" href="src/pages/landing.html">Home</a>
         </li>
         <li class="hover:text-zinc-500">
           <a
-            class="store-link text-base bg-orange-700 py-1 px-5 rounded-lg text-green-600"
+            class="text-base bg-amber-400 py-1 px-5 rounded-lg text-green-600"
             href=""
             >Store</a
           >
@@ -88,9 +82,9 @@
         </li>
       </ul>
 
-      <div class="menu-toggle">
+      <div class="hum-toggle">
         <input type="checkbox" class="checkbox" id="checkbox" />
-        <label for="checkbox" class="toggle">
+        <label for="checkbox" class="toggle-list">
           <div class="bars" id="bar1"></div>
           <div class="bars" id="bar2"></div>
           <div class="bars" id="bar3"></div>
@@ -101,13 +95,15 @@
     <!-- HOME section -->
 
     <!-- list product -->
-    <section
-      class="store-section container-card sm:m-0 sm:p-0 m-24 rounded-lg p-4 h-screen"
-    >
+    <section class="container-card h-screen w-full md:py-5 md:px-24 md:gap-5">
       <!-- tempat product -->
     </section>
-    <section class="h-full bg-green-900 flex items-center justify-center p-4">
-      <p class="text-white p-4 rounded-lg">goncang</p>
+
+    <section
+      class="h-full w-full flex justify-between items-center bg-green-700 md:py-12 md:px-60 py-3 px-5"
+    >
+      <h1 class="text-xl text-white">Copyright © 2023.</h1>
+      <a class="text-xl text-white" href="">GitHub</a>
     </section>
 
     <!-- Javascript -->

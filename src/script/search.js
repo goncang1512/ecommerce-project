@@ -19,11 +19,11 @@ function renderProducts(products) {
 
   products.forEach((product) => {
     const productHTML = `
-      <div class="card sm:w-full w-80 bg-zinc-50 shadow-xl" key="${product.id}">
+      <div class="md:rounded-lg rounded-0 flex justify-center flex-col md:w-80 w-2/4 bg-zinc-50 md:shadow-xl border border-green-600" key="${product.id}">
         <div class="card-top">
-          <figure>
+          <figure class="flex justify-center">
             <img
-              class="card-img"
+              class="h-72 p-2.5 position-center"
               src=${product.image}
               alt="Shoes"
             />
@@ -107,7 +107,7 @@ function renderProducts(products) {
   if (products.length === 0) {
     const container = document.querySelector(".container-card");
     container.innerHTML =
-      '<p class="notfound flex items-start fixed text-white h-screen text-3xl">NOT FOUND</p>';
+      '<p class="flex items-start justify-center pt-10 text-white h-screen text-3xl text-center">NOT FOUND</p>';
 
     const utterance = new SpeechSynthesisUtterance("not found");
 

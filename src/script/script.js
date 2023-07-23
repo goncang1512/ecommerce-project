@@ -1,4 +1,4 @@
-const menuList = document.querySelector(".navbar-list");
+const menuList = document.querySelector(".navbar-menu");
 const menuToggle = document.querySelector(".checkbox");
 
 menuToggle.addEventListener("click", () => {
