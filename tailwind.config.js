@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}", "./src/page/*.{html}", "./index.html"],
   theme: {
     extend: {},
     fontFamily: {
@@ -8,7 +8,6 @@ module.exports = {
     },
   },
   plugins: [require("daisyui")],
-  // daisyUI config (optional - here are the default values)
   daisyui: {
     themes: false, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "light", // name of one of the included themes for dark mode

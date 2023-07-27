@@ -3,13 +3,6 @@
   gap: 20px;
 }
 
-.keranjang-self {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
 .delete-cart {
   border-bottom: 1px solid rgb(34 197 94);
   display: none;
@@ -21,15 +14,9 @@
   display: none;
 }
 
-.button-hapus-deks {
-  width: 100%;
-  text-align: end;
-}
-
 .delete-deks {
   border-bottom: 1px solid rgb(34 197 94);
   display: none;
-  border-radius: 5px 5px 0 0;
 }
 
 .delete-mobile {
